@@ -1,0 +1,27 @@
+Steps to set up Lotus blockchain:
+Insert SD card into laptop in order to flash cryptopie file (~1 GB)
+Use balenaEtcher to flash the file onto the SD card
+Takes around 1 hour to complete 
+Insert SD card back into raspberry pi 
+After a few seconds, you will be asked for a user and password to which both are root
+User: root, pwrd: root
+You will automatically be asked to change the password to a personal one 
+As you type nothing with appear on the screen for password protection
+Next, make sure that the pi is connected to wifi in order to connect to the github properly
+Either connect the pi directly to your wifi box using an ethernet cable or you can find some answers online on how to connect the pi wirelessly to the wifi 
+Now, you should be able to start building the node 
+Start with: starport network chain create lotus https://github.com/babyblockchains/lotus
+This step should install the relevant files off the github site for lotus 
+It will also take a few moments to complete
+It will ask to create a starport account or login to a preexisting account 
+To create an account, choose the correct option (hitting enter when the create an account option is highlighted) 
+You will be asked for an account name (this can be anything, i.e your name)
+You will be asked for an account keyring passphrase (aka a password)
+Choose any password and as above it will not show the password typed out on the screen 
+Now, use: curl https://github.com/faddat to clone the data from the faddat github site 
+In order to complete this step, the pi needs to be properly connected to wifi 
+Now, check the chain list by: starport network chain list 
+Join the chain by: starport network chain join lotus 
+Most of the above steps can be followed off https://blurtter.com/lotus/@jacobgadikian/lotus-from-blurt-s-rpi-imagev 
+
+
